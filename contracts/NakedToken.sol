@@ -16,7 +16,7 @@ import './math/SafeMath.sol';
  * case, the token balance is moved to the token sale contract, which
  * in turn can transfer its tokens to contributors to the sale.
  */
-contract NakedSellersToken is StandardToken, BurnableToken, Ownable {
+contract NakedToken is StandardToken, BurnableToken, Ownable {
 
     // Constants
     string  public constant name = "Naked Sellers Token";
@@ -63,7 +63,7 @@ contract NakedSellersToken is StandardToken, BurnableToken, Ownable {
      * Constructor - instantiates token supply and allocates balanace of
      * to the owner (msg.sender).
      */
-    function NakedSellersToken(address _admin) {
+    function NakedToken(address _admin) {
         // the owner is a custodian of tokens that can
         // give an allowance of tokens for crowdsales
         // or to the admin, but cannot itself transfer
