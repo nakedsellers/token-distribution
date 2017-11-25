@@ -4,7 +4,7 @@ pragma solidity ^0.4.15;
 
 import './lifecycle/Pausable.sol';
 import './math/SafeMath.sol';
-import './QuantstampToken.sol';
+import './NakedToken.sol';
 
 /**
  * The NakedSale smart contract is used for selling NakedToken
